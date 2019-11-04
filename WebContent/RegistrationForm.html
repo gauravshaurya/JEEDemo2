@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+</nav>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Register</div>
+                        <div class="card-body">
+                            <form name="my-form" onsubmit="return validform()" action="register" method="get">
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">Customer Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail ID</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control" name="email">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">Customer ID</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" name="cid">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Gender</label>
+                                    <div class="col-md-6">
+                                        <input type="text" name="gender" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">City</label>
+                                    <div class="col-md-6">
+                                    <select name="city">
+			  			  <option value="city1">Noida</option>
+						  <option value="city2">New Delhi</option>
+						  <option value="city3">Gurgaon</option>
+						  <option value="city4">Ghaziabad</option>
+						  <option value="city4">Greater Noida</option>
+					</select>
+                                        <input type="text" class="form-control" name="city">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="password">
+                                    </div>
+                                </div>
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary">
+                                        Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+</main>-->
+
+<h1 align="center">Registration Form</h1>
+<hr/>
+<div>
+			
+<fieldset>
+        <form action= "register" method="get" >
+            <table>
+             	<tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="customerName" size="15" required/></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td><input type="radio" name="gender" value="M"/>Male
+                    <input type="radio" name="gender" value="F" />Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                   	<td>
+                   	<select name="city">
+			  			  <option value="Noida">Noida</option>
+						  <option value="New Delhi">New Delhi</option>
+						  <option value="Gurgaon">Gurgaon</option>
+						  <option value="Ghaziabad">Ghaziabad</option>
+						  <option value="Greater Noida">Greater Noida</option>
+					</select>
+					</td>
+                </tr>
+                <tr>
+                    <td>E-mail Id:</td>
+                    <td><input type="email" name="email" size="15" required/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" size="15" required/></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                    <td><input type="Reset" value="Reset"/></td>
+                </tr>
+        
+            </table>
+        </form>
+        </fieldset>
+</body>
+</html>
